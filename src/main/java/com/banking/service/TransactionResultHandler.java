@@ -9,6 +9,8 @@ public class TransactionResultHandler {
                     "Transferencia de alto valor completada. ID: " + s.transactionId() + ". Monto: " + s.amount();
             case TransactionSuccess s ->
                     "Transferencia completada. ID: " + s.transactionId() + ". Monto: " + s.amount();
+            case InvalidTransactionFailure f ->
+                    "Transferencia no válida: " + f.reason();
             case InsufficientFundsFailure f ->
                     "Fondos insuficientes. Disponible: " + f.availableAmount() +
                             ", solicitado: " + f.requestedAmount();
