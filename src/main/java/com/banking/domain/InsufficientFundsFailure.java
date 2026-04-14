@@ -1,5 +1,5 @@
 package com.banking.domain;
 
-public record InsufficientFundsFailure(Long availableAmount, Long requestedAmount)
+public record InsufficientFundsFailure(Long availableAmount, long requestedAmount)
         implements TransactionFailure {
 }

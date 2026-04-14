@@ -1,5 +1,5 @@
 package com.banking.domain;
 
-public record TransactionSuccess(String transactionId, Long amount)
+public record TransactionSuccess(String transactionId, long amount)
         implements TransactionResult {
 }
